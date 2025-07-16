@@ -11,7 +11,6 @@ import Features3 from '~/components/widgets/Features3.astro';
 import FAQs from '~/components/widgets/FAQs.astro';
 import Brands from '~/components/widgets/Brands.astro';
 
-import { YouTube } from 'astro-embed';
 
 const metadata = {
   title: 'Kasumi Labs',
@@ -22,45 +21,32 @@ const metadata = {
   <!-- Hero Widget ******************* -->
 
   <Hero
-    tagline="Startup Web Demo"
+    tagline="Innovation at Scale"
     actions={[
       {
         variant: 'primary',
-        target: '_blank',
-        text: 'Get templates',
-        href: '#',
-        icon: 'tabler:download',
+        text: 'Get in touch',
+        href: '#contact',
+        icon: 'tabler:message-circle',
       },
-      { text: 'Learn more', href: '#features' },
+      { text: 'Learn more', href: '#about' },
     ]}
   >
     <Fragment slot="title">
-      Improve <span class="hidden sm:inline">the online presence of</span> your <span
-        class="text-accent dark:text-white">Startup</span
-      > with Astrowind templates
+      <span class="text-accent dark:text-white">Kasumi Labs</span> - Building the Future of Technology
     </Fragment>
 
     <Fragment slot="subtitle">
-      Step into the spotlight with <span class="font-semibold">Astrowind</span> templates, your pathway to fortifying your
-      startup's digital footprint, fostering credibility, and expanding your reach.
-    </Fragment>
-
-    <Fragment slot="image">
-      <YouTube id="gxBkghlglTg" title="Astro just Launched.... Could it be the ultimate web framework?" />
-      <style is:inline>
-        lite-youtube {
-          margin: 0 auto;
-          max-width: 100%;
-        }
-      </style>
+      A technology company focused on innovative solutions that bridge the gap between cutting-edge research and practical applications. We specialize in AI, software development, and digital transformation.
     </Fragment>
   </Hero>
 
   <!-- Features2 Widget ************** -->
 
   <Features2
-    title="About us"
-    subtitle="We believe in the magic of turning dreams into stunning realities. Founded by passionate developers with a shared vision, we set out to simplify the website creation process. Our templates bring together the innovation of Astro 5.0 and the versatility of Tailwind CSS, enabling you to express your unique brand identity like never before."
+    id="about"
+    title="About Kasumi Labs"
+    subtitle="We are a technology company at the forefront of innovation, specializing in AI-driven solutions and cutting-edge software development. Our mission is to bridge the gap between advanced research and practical applications, creating tools and systems that empower businesses and individuals to achieve their full potential."
   >
     <Fragment slot="bg">
       <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
@@ -70,59 +56,34 @@ const metadata = {
   <!-- Stats Widget ****************** -->
 
   <Stats
-    title="Discover the impressive impact of Astrowind"
-    subtitle="The numbers below reflect the trust our users have placed in us and the remarkable outcomes we've helped them achieve."
+    title="Kasumi Labs by the Numbers"
+    subtitle="Innovation driven by results and measurable impact across our technology solutions."
     stats={[
-      { title: 'Downloads', amount: '182K' },
-      { title: 'Websites Launched', amount: '87' },
-      { title: 'User Ratings', amount: '4.8' },
-      { title: 'Satisfied Clients', amount: '116K' },
+      { title: 'Projects Delivered', amount: '25+' },
+      { title: 'Technologies Mastered', amount: '15+' },
+      { title: 'Years of Experience', amount: '8+' },
+      { title: 'Client Satisfaction', amount: '100%' },
     ]}
   />
 
   <!-- Brands Widget ****************** -->
 
   <Brands
-    title="Partnerships & Collaborations"
-    subtitle="At Astrowind, we believe in the power of collaboration to drive innovation and create exceptional experiences."
+    title="Technology Stack"
+    subtitle="We leverage cutting-edge technologies to deliver innovative solutions that drive results."
     icons={[]}
     images={[
       {
-        src: 'https://cdn.pixabay.com/photo/2015/05/26/09/37/paypal-784404_1280.png',
-        alt: 'Paypal',
-      },
-      {
-        src: 'https://cdn.pixabay.com/photo/2021/12/06/13/48/visa-6850402_1280.png',
-        alt: 'Visa',
-      },
-      {
-        src: 'https://cdn.pixabay.com/photo/2013/10/01/10/29/ebay-189064_1280.png',
-        alt: 'Ebay',
-      },
-
-      {
-        src: 'https://cdn.pixabay.com/photo/2015/04/13/17/45/icon-720944_1280.png',
-        alt: 'Youtube',
+        src: 'https://cdn.pixabay.com/photo/2015/04/23/17/41/node-js-736399_1280.png',
+        alt: 'Node JS',
       },
       {
         src: 'https://cdn.pixabay.com/photo/2013/02/12/09/07/microsoft-80658_1280.png',
         alt: 'Microsoft',
       },
       {
-        src: 'https://cdn.pixabay.com/photo/2015/04/23/17/41/node-js-736399_1280.png',
-        alt: 'Node JS',
-      },
-      {
         src: 'https://cdn.pixabay.com/photo/2015/10/31/12/54/google-1015751_1280.png',
         alt: 'Google',
-      },
-      {
-        src: 'https://cdn.pixabay.com/photo/2021/12/06/13/45/meta-6850393_1280.png',
-        alt: 'Meta',
-      },
-      {
-        src: 'https://cdn.pixabay.com/photo/2013/01/29/22/53/yahoo-76684_1280.png',
-        alt: 'Yahoo',
       },
     ]}
   />
@@ -131,24 +92,24 @@ const metadata = {
 
   <Features2
     title="What services do we provide?"
-    subtitle="We offer a wide range of website templates that suit various industries and purposes such as business, portfolio, e-commerce, blog, etc."
+    subtitle="We offer comprehensive technology solutions tailored to meet your specific needs, from AI development to full-stack applications."
     items={[
       {
-        title: 'Installation Instructions',
+        title: 'AI & Machine Learning',
         description:
-          'Offer clear instructions on how to download the purchased templates and install them on various website platforms or content management systems.',
-        icon: 'flat-color-icons:document',
+          'Custom AI solutions, machine learning models, and intelligent automation systems designed to optimize your business processes.',
+        icon: 'flat-color-icons:brain',
       },
       {
-        title: 'Demo and Previews',
+        title: 'Software Development',
         description:
-          'Provide interactive demos and previews that allow customers to see how their chosen template will look and function before making a purchase.',
+          'Full-stack development services including web applications, mobile apps, and desktop software using modern frameworks and technologies.',
         icon: 'flat-color-icons:template',
       },
       {
-        title: 'Technical Support',
+        title: 'Digital Transformation',
         description:
-          'Providing customer support for any technical issues related to the templates or their implementation.',
+          'Comprehensive consulting and implementation services to modernize your technology stack and optimize digital workflows.',
         icon: 'flat-color-icons:voice-presentation',
       },
     ]}
@@ -162,41 +123,41 @@ const metadata = {
 
   <Features
     id="features"
-    title="Main features of our templates"
-    subtitle="Possess several key characteristics to effectively cater to the needs of startups and entrepreneurs."
+    title="Why choose Kasumi Labs?"
+    subtitle="Our approach combines technical excellence with innovative thinking to deliver solutions that drive real results."
     columns={3}
     items={[
       {
-        title: 'Modern and Professional Design',
+        title: 'Cutting-Edge Technology',
         description:
-          'Have a contemporary design that reflects current design trends and gives a professional impression.',
+          'We leverage the latest technologies and frameworks to build modern, scalable, and efficient solutions.',
         icon: 'tabler:artboard',
       },
       {
-        title: 'Responsive and Mobile-Friendly',
-        description: 'Adapt seamlessly to different screen sizes and devices to ensure a consistent experience.',
+        title: 'Scalable Solutions',
+        description: 'Our architectures are designed to grow with your business, adapting to changing needs seamlessly.',
         icon: 'tabler:picture-in-picture',
       },
       {
-        title: 'Customizability',
+        title: 'Custom Development',
         description:
-          'Easily customizable, allowing users to adapt the design, colors, typography, and content to match their brand identity.',
+          'Every solution is tailored to your specific requirements, ensuring optimal performance and user experience.',
         icon: 'tabler:adjustments-horizontal',
       },
       {
-        title: 'Fast Loading Times',
-        description: 'Optimized for speed to ensure a smooth user experience and favorable search engine rankings.',
+        title: 'Rapid Development',
+        description: 'Agile methodologies and efficient processes enable us to deliver high-quality results quickly.',
         icon: 'tabler:rocket',
       },
       {
-        title: 'Search Engine Optimization (SEO)',
+        title: 'AI Integration',
         description:
-          'Incorporate SEO best practices in template structure and code to improve visibility in search engine results.',
-        icon: 'tabler:arrows-right-left',
+          'Seamless integration of AI and machine learning capabilities to enhance functionality and user experience.',
+        icon: 'tabler:brain',
       },
       {
-        title: 'Compatibility',
-        description: 'The templates work seamlessly across various content management systems and website builders.',
+        title: 'Full-Stack Expertise',
+        description: 'End-to-end development capabilities covering frontend, backend, database, and deployment.',
         icon: 'tabler:plug-connected',
       },
     ]}
@@ -208,34 +169,34 @@ const metadata = {
     title="Frequently Asked Questions"
     items={[
       {
-        title: 'What are landing page templates?',
+        title: 'What types of projects does Kasumi Labs work on?',
         description:
-          'Landing page templates are pre-designed web page layouts that are specifically created to serve as a foundation for building effective landing pages. These templates are designed to capture the attention of visitors and guide them towards a specific action or goal, such as signing up for a newsletter, making a purchase, or downloading a resource.',
+          'We specialize in AI and machine learning solutions, full-stack web development, mobile applications, and digital transformation projects. Our expertise spans across various industries including healthcare, finance, e-commerce, and technology.',
       },
       {
-        title: 'Why should I use a template?',
+        title: 'How long does a typical project take?',
         description:
-          'Some of the advantages are that they provide a ready-to-use structure,  saving you significant time. Are designed with user-friendliness in mind and provide a cost-effective alternative, saving you money while still delivering a quality result.',
+          'Project timelines vary based on complexity and requirements. Simple applications can be completed in 2-4 weeks, while more complex AI solutions or enterprise systems may take 2-6 months. We provide detailed timelines during the initial consultation.',
       },
       {
-        title: 'Can I preview templates before buying?',
+        title: 'Do you offer ongoing support and maintenance?',
         description:
-          'Yes, the templates allow you to preview them before making a purchase. There is a "Demo" button associated with each template.',
+          'Yes, we provide comprehensive post-launch support including bug fixes, feature updates, performance optimization, and technical maintenance. We offer flexible support packages tailored to your specific needs.',
       },
       {
-        title: 'Do I need technical skills to use a template?',
+        title: 'What is your development process?',
         description:
-          'Advanced technical skills are not required to use a template, but having a basic understanding of web navigation and familiarity with using online tools can still be beneficial. If you have more specific customization needs, you might need to consult guides or reach out to customer support for assistance.',
+          'We follow an agile development methodology with regular client communication, milestone reviews, and iterative development. This ensures transparency, quality, and alignment with your goals throughout the project.',
       },
       {
-        title: 'Can I use the template on multiple websites?',
+        title: 'Can you work with our existing technology stack?',
         description:
-          'No, the template comes with a single-use license, meaning you can use the template on one website or project only. Using the template on additional websites would require purchasing additional licenses.',
+          'Absolutely. We have experience integrating with a wide range of existing systems and technologies. We can work with your current infrastructure or recommend improvements to enhance performance and scalability.',
       },
       {
-        title: 'What if I need help with customization?',
+        title: 'How do I get started with Kasumi Labs?',
         description:
-          "The templates provides a comprehensive step-by-step guide that walk you through the customization process. If you still have doubts, you can reach out to our customer support team. They can answer your questions, provide guidance on customization, and address any issues you're facing.",
+          'Getting started is simple. Contact us through our website or email to schedule a free consultation. We\'ll discuss your project requirements, timeline, and provide a detailed proposal with transparent pricing.',
       },
     ]}
   >
@@ -247,47 +208,28 @@ const metadata = {
   <!-- Features3 Widget ************** -->
 
   <Features3
-    title="Let us know how we can help"
-    subtitle="We're here to help and answer any question you might have."
-    columns={4}
+    id="contact"
+    title="Let's build something amazing together"
+    subtitle="Ready to transform your ideas into reality? Get in touch and let's discuss your project."
+    columns={2}
     items={[
-      {
-        title: 'Phone',
-        icon: 'tabler:phone',
-        callToAction: {
-          target: '_blank',
-          text: 'Call us',
-          href: '/',
-          variant: 'link',
-        },
-      },
       {
         title: 'Email',
         icon: 'tabler:mail',
         callToAction: {
           target: '_blank',
-          text: 'Write to us',
-          href: '/',
+          text: 'Send us an email',
+          href: 'mailto:contact@kasumi-labs.com',
           variant: 'link',
         },
       },
       {
-        title: 'Chat with sales',
-        icon: 'tabler:message-circle',
+        title: 'Schedule a Call',
+        icon: 'tabler:calendar',
         callToAction: {
           target: '_blank',
-          text: 'Start chatting',
-          href: '/',
-          variant: 'link',
-        },
-      },
-      {
-        title: 'Chat with support',
-        icon: 'tabler:message-circle',
-        callToAction: {
-          target: '_blank',
-          text: 'Start chatting',
-          href: '/',
+          text: 'Book a consultation',
+          href: '#',
           variant: 'link',
         },
       },
@@ -300,18 +242,17 @@ const metadata = {
     actions={[
       {
         variant: 'primary',
-        target: '_blank',
-        text: 'Get templates',
-        href: '#',
-        icon: 'tabler:download',
+        text: 'Start your project',
+        href: '#contact',
+        icon: 'tabler:rocket',
       },
     ]}
   >
-    <Fragment slot="title">Be a part of our vision</Fragment>
+    <Fragment slot="title">Ready to innovate?</Fragment>
 
     <Fragment slot="subtitle">
-      Discover a dynamic work environment, unparalleled growth opportunities, and the chance to make a meaningful
-      impact.
+      Join the growing number of companies that trust Kasumi Labs to deliver cutting-edge technology solutions.
+      Let's discuss how we can help you achieve your goals.
     </Fragment>
   </CallToAction>
 </Layout>
